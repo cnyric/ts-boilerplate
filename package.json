@@ -1,0 +1,33 @@
+{
+  "name": "ts-boilerplate",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Daniel Sieradski <dsieradski@cnyric.org>",
+  "workspaces": [],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "clean": "rm -rf api/node_modules frontend/node_modules imports/node_modules node_modules",
+    "dev": "rm -rf .overmind.sock; OVERMIND_PORT=XXXX overmind start -f Procfile.dev",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "dependencies": {
+    "tslog": "^4.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.9",
+    "@types/web": "^0.0.114",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-perfectionist": "^1.5.1",
+    "eslint-plugin-security": "^1.7.1",
+    "prettier": "^3.0.3",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
